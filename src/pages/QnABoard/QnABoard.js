@@ -46,9 +46,11 @@ export default class QnABoard extends Component {
                 }
             </div>
             </div>
-            {/* <Link to="/add-review">
+            <div>
+            <Link to="/add-review">
                 <button className="question-add">글쓰기</button>
-            </Link> */}
+            </Link>
+            </div>
        </div>     
         
         )
