@@ -1,3 +1,12 @@
+- 기능 요구사항
+- 질문 답변 게시판 기능
+    - [o] 글 쓸 수 있는 기능
+    - [x] 해쉬태그 달 수 있는 기능
+    - [x] 제출하기 버튼을 누르면 질문 답변게시판 으로 이동하기
+    - [x] 질문 답변 게시판의 글을 누르면 글이 나오는 기능. 
+    - [x] 댓글 달 수 있는 기능
+   
+- 굵직한 기능을 구현한 후에는, eslint 를  활용하여 코딩 컨벤션 맞추기
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
