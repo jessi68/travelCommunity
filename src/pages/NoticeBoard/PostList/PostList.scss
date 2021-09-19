@@ -1,8 +1,8 @@
 .vertical-align {
     display: grid;
     grid-template-rows: 4;
-    width: 200px;
     height: 200px;
+    width: 800px;
 }
 
 .post-border{
@@ -10,28 +10,29 @@
 }
 
 .brief-info {
-    width: 300px;
+    @extend .post-border;
     height: 20px;
     display: flex;
     flex-direction: row;
     font-size: 15px;
-    @extend .post-border
 }
 
 .post-id {
- @extend .post-border
+    @extend .post-border;
+    width: 40px;
 }
 
 .post-title {
-    @extend .post-border
+    @extend .post-border;
+    width: 200px;
 }
 
 .post-writer-id {
-
-    @extend .post-border
+    @extend .post-border;
+    width: 150px;
 }
 
 .post-date{
-    width: 50px;
-    @extend .post-border
+    @extend .post-border;
+    width: 200px;
 }

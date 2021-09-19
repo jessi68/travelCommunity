@@ -3,26 +3,34 @@ import { Link } from "react-router-dom";
 import  "./PostList.scss"
 
 
+function RowTable(props) {
+
+    return(
+        <div className="brief-info" key={props["id"] +"briefExplanation"}>
+        <div className="post-id">{props["id"].toString()}</div>
+         <div className="post-title">{props["title"]}</div>
+         <div className="post-writer-id">{props["nickname"]}</div>
+         <div className="post-data">{props["writtenDate"]}</div>
+      </div>
+    );
+}
+
 
 export default class PostList extends Component {
 
     constructor(props) {
         super(props);
         this.props = props;
+        this.postMetaData = {"id": "번호", "title": "제목", "nickname":"작성자 닉네임", "writtenDate": "작성 날짜"};
     }
 
     render() {
-        console.log(this.props.posts);
         return(
             <div className="vertical-align">
-
+                 {RowTable(this.postMetaData)}
                 {this.props.posts.map((post) => 
-                <div className="brief-info" key={post["id"] +"briefExplanation"}>
-                  <div className="post-id">{post["id"].toString()}</div>
-                   <div className="post-title">{post["title"]}</div>
-                   <div className="post-writer-id">{post["nickname"]}</div>
-                   <div className="post-data">{post["writtenDate"]}</div>
-                </div>)}
+                  RowTable(post)
+                )}
             </div>
         )
     }
