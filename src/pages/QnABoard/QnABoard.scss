@@ -1,0 +1,25 @@
+.vertical-align {
+   display: flex;
+   flex-direction: column;
+}
+
+.row-align {
+    display: flex;
+    flex-direction: row;
+}
+
+.post-numbers {
+    width: 100px;
+    height: 20px;
+    @extend .row-align;
+}
+
+.number  {
+    margin-top: 60px;
+    margin-right: 6px;
+}
+
+.question-add {
+    margin-top: 60px;
+    margin-left: 160px;
+}

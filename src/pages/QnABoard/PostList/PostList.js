@@ -1,5 +1,4 @@
 import { Component } from "react";
-import { Link } from "react-router-dom";
 import  "./PostList.scss"
 
 
@@ -26,7 +25,7 @@ export default class PostList extends Component {
 
     render() {
         return(
-            <div className="vertical-align">
+            <div className="vertical-align-grid">
                  {RowTable(this.postMetaData)}
                 {this.props.posts.map((post) => 
                   RowTable(post)
